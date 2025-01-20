@@ -1,3 +1,128 @@
+/*                                 Google fonts */
+/*            google qucksand font */
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+/*            google raleway font */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+.quicksand-regular {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.raleway-regular {
+  font-family: "Raleway", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*                                Common variables  */
+:root {
+  /*        fonts */
+  --font-bold: 700;
+  --font-semi-bold: 600;
+  --font-regular: 400;
+
+  /*      colors */
+  --color-white: rgb(255, 255, 255);
+  --color-black: rgb(0, 0, 0);
+  --color-orange: rgb(255, 165, 0);
+  --color-blue: rgb(1, 172, 253);
+  --color-sky-blue: rgb(135, 206, 235);
+}
+
+/*                                Universal styles */
 * {
   background-color: whitesmoke;
+  margin: 0px;
+  padding: 0px;
+}
+
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+/*                                 Navbar style  */
+header {
+  /* border: 2px solid red; */
+  font-family: "Quicksand", serif;
+}
+.navbar-container {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 10px;
+  /* border: 2px solid green; */
+}
+.navbar-links {
+  width: 95%;
+  margin: 0px auto;
+  display: flex;
+  /* border: 2px solid green; */
+  justify-content: space-around;
+}
+.logo-title {
+
+  width: 15%;
+  /* border: 2px solid red; */
+  display: flex;
+  /* justify-content: space-around; */
+  align-items: center;
+}
+.navbar-links1 {
+  width: 40%;
+  margin: 0px auto;
+  /* border: 2px solid green; */
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.navbar-icon {
+  width: 62px;
+}
+.navbar-title {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.navbar-home {
+  font-size: 1.25rem;
+  font-weight: var(--font-bold);
+  color: var(--color-orange);
+}
+.navbar-about {
+  font-size: 1.25rem;
+  font-weight: var(--font-bold);
+  color: var(--color-sky-blue);
+}
+.navbar-facilities {
+  font-size: 1.25rem;
+  font-weight: var(--font-bold);
+  color: #05d4df;
+}
+.navbar-admission {
+  font-size: 1.25rem;
+  font-weight: var(--font-bold);
+  color: #5d58ef;
+}
+.navbar-contant-btn-container {
+  /* border: 2px solid red; */
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-contant-btn {
+  width: 130px;
+  height: 33px;
+
+  border: none;
+  border-radius: 12px;
+
+  font-size: 1.25rem;
+  color: var(--color-white);
+  background-color: var(--color-orange);
 }
