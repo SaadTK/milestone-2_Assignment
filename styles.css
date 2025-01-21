@@ -63,9 +63,9 @@ header {
   display: flex;
   /* border: 2px solid green; */
   justify-content: space-around;
+  padding-bottom: 10px;
 }
 .logo-title {
-
   width: 15%;
   /* border: 2px solid red; */
   display: flex;
@@ -125,4 +125,69 @@ header {
   font-size: 1.25rem;
   color: var(--color-white);
   background-color: var(--color-orange);
+}
+.burger-menu {
+  display: none;
+}
+
+/*                                marquee style  */
+.marquee-container {
+  text-align: center;
+}
+.marquee-text-container {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: var(--color-orange);
+  /* background-color: orange; */
+}
+.marquee-text {
+  background-color: var(--color-orange);
+  color: var(--color-white);
+  font-size: 2rem;
+  font-weight: var(--font-semi-bold);
+}
+/*                                        banner styles  */
+.banner-container {
+  width: 85%;
+  margin: 0px auto;
+  border: 2px solid red;
+
+  display: flex;
+  /* grid-template-columns: repeat(2, 1fr); */
+  justify-content: space-between;
+  align-items: center;
+}
+.container-left {
+  border: 2px solid green;
+}
+.container-right {
+  border: 2px solid blue;
+}
+.container-img {
+  height: 550px;
+}
+/*                                        Responsive design for mobile phones  */
+@media (max-width: 768px) {
+  /*                     navbar style  */
+  .navbar-link {
+    display: none;
+  }
+  .navbar-icon {
+    width: 46px;
+  }
+  .burger-menu {
+    display: block;
+    width: 30px;
+  }
+  .navbar {
+    padding: 40px 10px;
+  }
+  header {
+    border: 1px solid var(--color-orange);
+  }
+
+  /*                    marquee style  */
+  .marquee {
+    display: none;
+  }
 }
